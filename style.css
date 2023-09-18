@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+:root{
+    --dark1: #0000004d;
+    --dark2: #181c20;
+    --dark3: #212529;
+    --dark4: #2d3135;
+    --dark5: #424549;
+    --dark6: #404346;
+    --dark7: #9c9c9c;
+    --dark8: #dae0e7;
+    --dark9: #262a2e;
+    --red1: #902331;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(var(--red1) 50% , var(--dark2) 50%);
+}
+.container{
+    padding: 20px;
+    box-shadow: 3px 3px 20px (--dark1);
+    background: var(--dark2);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin: 10px;
+
+}
+.container header .filterEntries{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.filterEntries .entries {
+    color: var(--dark8) ;
+}
+.filterEntries .entries select, .filterEntries .filter input{
+    padding: 7px 10px;
+    border: 1px solid var(--dark6);
+    color: var(--dark8);
+    background: var(--dark4);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.filterEntries .filter{
+    display: flex;
+    align-items: center;
+}
+.filter label{
+    color: var(--dark8);
+    margin-left: 5px;
+}
+.filter input:focus{
+    border-color: var(--dark7);
+}
+.container header .addMember-btn{
+    margin-bottom: 15px;
+}
+header .addMember-btn button{
+    padding: 9px 14px;
+    color: var(--dark8);
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    pointer-events: auto;
+    outline: none;
+    border: 1px solid var(--dark6);
+    background: var(--dark4) ;
+    border-radius: 5px;
+
+}
+.addMember-btn button:hover{
+    background: var(--dark5);
+}
+.container table{
+    border-collapse: collapse;
+    text-align: left;
+}
+table .heading{
+    background: var(--dark5);
+    background: transparent;
+    color: var(--dark8);
+
+}
+table .heading th:hover{
+    background: var(--dark5);
+    transition: 0.3s;
+}
+table tr th , table tr td{
+    padding: 4px 15px;
+    color: var(--dark8);
+}
+table tr th{
+    padding: 12px 15px;
+}
+table tr td:nth-child(1) , table tr td:nth-child(2){
+    text-align: center;
+}
+table tr:hover{
+    cursor: pointer;
+    background: var(--dark9);
+}
+table tr td{
+    border-bottom: 1px solid var(--dark6);
+}
+table tbody tr:first-child td{
+    border-top: 1px solid var(--dark6);
+}
+table tbody tr:nth-child(odd){
+    background: var(--dark9);
+}
+table tbody tr:nth-child(odd) > td:nth-child(3){
+    background: var(--dark4);
+}
+table tr td{
+    font-size: 15px;
+}
+table td button{
+    margin: 0px 3px;
+    padding: 5px;
+    width: 35px;
+    background: var(--dark5);
+    color: var(--dark8);
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    pointer-events: auto;
+    outline: none;
+    border: 1px solid var(--dark7);
+}
